@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+.flexCenter{
+    @apply flex justify-center items-center
+}
+
+.flexBetween{
+    @apply flex justify-between items-center
+}
+
+.flexStart{
+    @apply flex justify-start items-center
+}
+
+.navbar{
+    @apply py-5 px-8 border-b border-b-black gap-4
+}
+
+.modal-head-text {
+    @apply md:text-5xl text-3xl font-extrabold text-left max-w-5xl w-full;
+  }
+
+  .modal {
+    @apply fixed flex items-center z-10 left-0 right-0 top-0 bottom-0 mx-auto bg-black/80;
+  }
+  
+  /* .modal_wrapper {
+    @apply flex justify-start items-center flex-col absolute h-full w-2/3 bottom-0 bg-white lg:px-40 px-8 pt-14 pb-72 overflow-auto m-auto;
+  }
+   */ 
+
+  
+  .modal_wrapper {
+    @apply flex justify-start items-center flex-col relative h-full w-[50%] m-auto rounded-3xl h-[90%] bg-white lg:px-40 px-8 pt-14 pb-72 overflow-auto;
+  }
